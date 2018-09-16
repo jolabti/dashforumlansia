@@ -44,12 +44,12 @@
 	                	<small id="login-empty-input" class="error">email or password cannot be empty <br>&nbsp;</small>
 
 	                	<!-- ================================= erorr massage ================================== -->
-	                	<?php if($alert): ?>
+	                	<?php if ($alert): ?>
 	                		<small id="login-invalid-input" class="error">invalid email or password<br>&nbsp;</small>
 	                	<?php endif; ?>
 
 	                	<!-- ================================= form login ======================================-->
-	                    <form role="form" method="post" onsubmit="return checkEmptyInput();" action="<?=base_url()?>authentication/login/">
+	                    <form role="form" method="post" onsubmit="return checkEmptyInput();" action="<?=site_url("authentication/login")?>">
 	                        <fieldset>
 	                            <div class="form-group">
 	                                <input class="form-control" id="email" placeholder="E-mail" name="email" type="email" autofocus>
@@ -69,7 +69,7 @@
 	    </div>
 	</div>
 
-	
+
 
     <!-- jQuery -->
     <script src="<?=base_url()?>assets/js/jquery.min.js"></script>
